@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const compression = require('compression');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
-require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
+require('dotenv').config();
 
 const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
